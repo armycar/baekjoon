@@ -1,3 +1,4 @@
+package L1;
 import java.util.*;
 public class q10869 {
     public static void main(String[] args) throws Exception {
