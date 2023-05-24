@@ -11,6 +11,17 @@ public class q2884 {
         int newHour = hour;
         int newMinute = minute - 45;
 
-        System.out.println(newHour+""+newMinute);
+        if(newMinute < 0 && newHour >0) {
+            newHour -=1;
+            newMinute +=60;
+            System.out.println(newHour+" "+newMinute);
+        }
+        else if(newMinute < 0 && newHour <= 0) {
+            newHour +=23;
+            newMinute +=60;
+            System.out.println(newHour+" "+newMinute);
+        }
+        else 
+        System.out.println(newHour+" "+newMinute);
     }
 }
