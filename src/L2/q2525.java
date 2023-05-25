@@ -12,6 +12,14 @@ public class q2525 {
         int newHour = hour;
         int newMinute = minute + time;
 
+        if(newMinute>=60) {
+            newHour += newMinute/60;
+            newMinute %= 60;
+            if(newHour>=24) {
+                newHour %= 24;
+            }
+        }
         System.out.println(newHour+" "+newMinute);
+        scanner.close();
     }
 }
