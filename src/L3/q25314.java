@@ -6,13 +6,15 @@ public class q25314 {
 public static void main(String[] args) {
     {
         Scanner scanner = new Scanner(System.in);
+
         int N = scanner.nextInt();
-        String ch = "int";
+        String ch = "";
+        scanner.close();
  
-        for(int i=0; i<N ;i++) {
-            ch = "long "+ch;
+        for(int i=1; i<=N/4 ;i++) {
+            ch += "long ";
         }
-        System.out.println(ch);
+        System.out.println(ch+"int");
 }
 }
 }
